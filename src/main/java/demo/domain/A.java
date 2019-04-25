@@ -12,7 +12,7 @@ public class A {
 	@GeneratedValue
 	private long id;
 
-	@OneToOne
+	@OneToOne(optional = false)
 	private B b;
 
 	public B getB() {
